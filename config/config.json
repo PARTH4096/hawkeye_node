@@ -1,0 +1,15 @@
+{
+    "development": {
+        "PORT": 3000,
+        "MONGODB_URI": "mongodb://heroku_1pfk7m43:af1g07oo8aieuabnhvtp1okmlm@ds249942.mlab.com:49942/heroku_1pfk7m43",
+        "JWT_SECRET": "SECRET#123",
+        "JWT_EXP": "20m"
+    },
+    "production": {
+        "PORT": 80,
+        "MONGODB_URI": "mongodb://xxxxx/DB_Name",
+        "JWT_SECRET": "SECRET#123",
+        "JWT_EXP": "2m"
+    }
+}
+
