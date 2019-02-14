@@ -438,6 +438,7 @@ module.exports.newpost=(req, res) => {
                   }
                   else
                         {post.rate=(post.rate*post.ratedBy+req.body.rate)/(post.ratedBy+1)
+                          post.rate=Math.round(post.rate)
                           post.ratedBy++;
                           post.ratedUsers.push(user.firstName);
                         post.save((err,post) => {
